@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="10dp"
+        android:src="@drawable/unimor" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="#D8D7FF"
+        android:baselineAligned="false"
+        android:gravity="center"
+        android:text="HITUNG NILAI MAHASISWA"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="@android:color/black"
+        android:textSize="10pt"
+        android:textStyle="italic|bold" />
+
+    <EditText
+        android:id="@+id/ednama"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:ems="10"
+        android:hint="Nama Mahasiswa"
+        android:inputType="textPersonName"
+        android:text=""
+        android:textSize="8pt"
+        android:textStyle="italic|bold" />
+
+    <EditText
+        android:id="@+id/ednim"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Nim Mahasiswa"
+        android:inputType="number"
+        android:text=""
+        android:textSize="8pt"
+        android:textStyle="italic|bold" />
+
+    <EditText
+        android:id="@+id/edNilai1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Nilai Tugas"
+        android:inputType="number"
+        android:text=""
+        android:textSize="8pt"
+        android:textStyle="italic|bold" />
+
+    <EditText
+        android:id="@+id/edNilai2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Nilai UTS"
+        android:inputType="number"
+        android:text=""
+        android:textSize="8pt"
+        android:textStyle="italic|bold" />
+
+    <EditText
+        android:id="@+id/edNilai3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Nilai UAS"
+        android:inputType="number"
+        android:text=""
+        android:textSize="8pt"
+        android:textStyle="italic|bold" />
+
+    <Button
+        android:id="@+id/button_hitung"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="#FF333300"
+        android:onClick="hitungNilai"
+        android:text="Hitung Nilai"
+        android:textColor="@android:color/white" />
+
+    <TextView
+        android:id="@+id/tv_nilai_akhir"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="Nilai Akhir"
+        android:textSize="10pt"
+        android:textStyle="italic|bold" />
+
+    <EditText
+        android:id="@+id/edakhir"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text=""
+        android:textSize="8pt" />
+
+</LinearLayout>
